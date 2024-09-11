@@ -16,6 +16,8 @@
 
    We should configure Maven in a such way Surefire doesn't execute Integration tests and Failsafe doesn't execute unit tests. surefire doesn't execute Integration tests and Failsafe doesn't execute unit tests.
 
+  
+
 ## Running Unit Tests and Integration Tests Seperatel 
 
 Maven has a build lifecycle made up out of several phases. When you call a particular one, all phases before that one will be executed first. See https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
@@ -24,3 +26,5 @@ There are two ways how you could solve what you want:
 
 - use `-Dsurefire.skip=true/false` and `-DskipITs=true/false`(https://www.mkyong.com/maven/how-to-skip-maven-unit-test/)
 - call the plugin goal directly `mvn clean test-compile failsafe:integration-test`
+
+hi helloo
